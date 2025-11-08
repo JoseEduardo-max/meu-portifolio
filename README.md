@@ -1,16 +1,54 @@
-# React + Vite
+# 💠 Meu Portfólio — Futurista & Interativo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o meu portfólio pessoal desenvolvido com **React + Vite**, utilizando um design **futurista**, com **neon**, **dark mode**, **gradientes**, **animações suaves** e uma **navbar oculta com menu hambúrguer**.
 
-Currently, two official plugins are available:
+O objetivo deste projeto é apresentar minhas habilidades, projetos e identidade visual de forma moderna e profissional.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** — Framework principal
+- **Vite** — Build rápido e leve
+- **Tailwind CSS** — Estilização com utilitários
+- **Framer Motion** — Animações suaves e fluidas
+- **Lucide React** — Ícones modernos
+- **JavaScript (ES6+)**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎨 Destaques do Design
+
+✅ Layout futurista  
+✅ Gradientes neon  
+✅ Tema escuro moderno  
+✅ Navbar oculta com botão hambúrguer  
+✅ Sidebar animada  
+✅ Cards interativos  
+✅ Seções fluidas com animações  
+✅ UI limpa, responsiva e agradável  
+
+---
+
+## 🧩 Recursos do Projeto
+
+- Header com apresentação e animação
+- Seção "Sobre Mim"
+- Seção de Projetos com cards animados
+- Menu móvel futurista
+- Footer simples e elegante
+- Visual inspirado em interface sci-fi
+
+## 📌 Próximas Funcionalidades
+
+- Light Mode opcional
+- Animações de entrada nas seções
+- Nova página para certificados
+- Página de contato com formulário funcional
+
+## 👤 Autor
+
+José Eduardo De Araujo Ferreira Filho
+Desenvolvedor FullStack | Estudante 
+Instagram: []
+GitHub: []
