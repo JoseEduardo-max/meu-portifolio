@@ -1,16 +1,14 @@
 import { motion } from "framer-motion";
 
 export default function Hero() {
-  // ✅ Texto que será digitado
   const subtitle = "Desenvolvedor Front-End & Futuro Full-Stack";
 
-  // ✅ Animação de digitação (uma letra por vez)
   const typingAnimation = {
     hidden: { opacity: 0 },
     visible: (i) => ({
       opacity: 1,
       transition: {
-        delay: i * 0.04, // velocidade da digitação
+        delay: i * 0.04,
       },
     }),
   };
@@ -22,7 +20,7 @@ export default function Hero() {
         bg-transparent pt-24
       "
     >
-      {/* TÍTULO ANIMADO */}
+      {/* TÍTULO COM GLOW NEON */}
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -30,12 +28,34 @@ export default function Hero() {
         className="
           text-5xl md:text-6xl font-extrabold 
           text-black dark:text-white 
+          relative
         "
       >
-        Olá, eu sou o <span className="text-purple-500">Eduardo</span>
+        Olá, eu sou o{" "}
+        
+        {/* GLOW ANIMADO NO NOME */}
+        <motion.span
+          animate={{
+            textShadow: [
+              "0 0 4px rgba(168,85,247,0.3)",
+              "0 0 12px rgba(168,85,247,0.6)",
+              "0 0 20px rgba(168,85,247,0.9)",
+              "0 0 12px rgba(168,85,247,0.6)",
+              "0 0 4px rgba(168,85,247,0.3)",
+            ],
+          }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+          className="text-purple-500"
+        >
+          Eduardo
+        </motion.span>
       </motion.h1>
 
-      {/* SUBTÍTULO COM EFEITO DIGITANDO + CURSOR */}
+      {/* SUBTÍTULO COM TYPEWRITER */}
       <motion.h2
         initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
@@ -59,11 +79,11 @@ export default function Hero() {
           </motion.span>
         ))}
 
-        {/* ✅ CURSOR PISCANDO */}
+        {/* CURSOR PISCANDO */}
         <motion.span
           initial={{ opacity: 0 }}
           animate={{
-            opacity: [0, 1, 0], // pisca
+            opacity: [0, 1, 0],
           }}
           transition={{
             duration: 1,
@@ -87,7 +107,7 @@ export default function Hero() {
         Este portfólio mostra meu estilo, meus projetos e minha evolução como dev.
       </motion.p>
 
-      {/* BOTÃO ANIMADO */}
+      {/* BOTÃO */}
       <motion.a
         href="#projetos"
         initial={{ scale: 0 }}
