@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export default function Hero() {
-  const subtitle = "Desenvolvedor Front-End & Futuro Full-Stack";
+  const subtitle = "Desenvolvedor Full-Stack";
 
   const typingAnimation = {
     hidden: { opacity: 0 },
@@ -16,7 +16,7 @@ export default function Hero() {
       min-h-screen flex flex-col justify-center items-start px-8
       bg-transparent pt-24
     ">
-      
+
       {/* TÍTULO COM GLOW NEON */}
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
@@ -24,12 +24,11 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
         className="
           text-5xl md:text-6xl font-extrabold 
-          text-black dark:text-white 
-          relative
-        "
+          text-white 
+          relative"
       >
-        Olá, eu sou o{" "}
-        
+        Olá, eu me chamo {" "}
+
         {/* GLOW ANIMADO NO NOME */}
         <motion.span
           animate={{
@@ -48,7 +47,7 @@ export default function Hero() {
           }}
           className="text-purple-500"
         >
-          Eduardo
+          José Eduardo
         </motion.span>
       </motion.h1>
 
@@ -59,7 +58,7 @@ export default function Hero() {
         className="
           text-xl md:text-2xl mt-4 
           font-medium tracking-wide
-          text-gray-700 dark:text-gray-300
+          text-white/80
           h-8 md:h-10 flex gap-1 items-center whitespace-nowrap
         "
       >
@@ -91,12 +90,13 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.4 }}
         className="
-          max-w-xl mt-6 text-lg 
-          text-gray-600 dark:text-gray-300
-        "
+        max-w-xl mt-6 text-lg 
+        text-white/70"
       >
-        Construo interfaces modernas, com animações suaves, dark mode e design futurista.
-        Este portfólio mostra meu estilo, meus projetos e minha evolução como dev.
+        Desenvolvo interfaces modernas, responsivas e animadas, utilizando boas práticas,
+        design elegante e performance. Trabalho com React, Tailwind, animações, dark mode,
+        integração de APIs e criação de experiências fluidas para o usuário.
+        Este portfólio mostra minhas habilidades, meus projetos e minha evolução como desenvolvedor.
       </motion.p>
 
       {/* BOTÃO */}
@@ -115,7 +115,7 @@ export default function Hero() {
           transition-all duration-300
         "
       >
-        Ver Projetos 🚀
+        Ver Projetos 
       </motion.a>
     </section>
   );

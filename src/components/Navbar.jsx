@@ -41,6 +41,7 @@ export default function Navbar() {
       <AnimatePresence>
         {open && (
           <motion.aside
+            style={{ right: 0, left: "auto" }}
             initial={{ x: 300 }}
             animate={{ x: 0 }}
             exit={{ x: 300 }}
