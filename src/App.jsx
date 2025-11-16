@@ -4,11 +4,10 @@ import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br 
-        from-gray-100 via-gray-200 to-gray-300 
-        dark:from-black dark:via-purple-900 dark:to-purple-600
+    <div className="min-h-screen bg-gradient-to-br from-[#eef2ff] via-[#e0e7ff] to-[#c7d2fe] 
+        dark:from-[#0a0118] dark:via-[#2d0057] dark:to-[#000000]
         text-black dark:text-white
-        transition-colors duration-500">
+        transition-all duration-700">
       <Navbar />
       <Hero />
     </div>

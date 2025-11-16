@@ -7,19 +7,16 @@ export default function Hero() {
     hidden: { opacity: 0 },
     visible: (i) => ({
       opacity: 1,
-      transition: {
-        delay: i * 0.04,
-      },
+      transition: { delay: i * 0.04 },
     }),
   };
 
   return (
-    <section
-      className="
-        min-h-screen flex flex-col justify-center items-start px-8
-        bg-transparent pt-24
-      "
-    >
+    <section className="
+      min-h-screen flex flex-col justify-center items-start px-8
+      bg-transparent pt-24
+    ">
+      
       {/* TÍTULO COM GLOW NEON */}
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
@@ -37,17 +34,17 @@ export default function Hero() {
         <motion.span
           animate={{
             textShadow: [
-              "0 0 4px rgba(168,85,247,0.3)",
-              "0 0 12px rgba(168,85,247,0.6)",
-              "0 0 20px rgba(168,85,247,0.9)",
-              "0 0 12px rgba(168,85,247,0.6)",
-              "0 0 4px rgba(168,85,247,0.3)",
+              "0 0 6px rgba(168,85,247,0.4)",
+              "0 0 12px rgba(168,85,247,0.7)",
+              "0 0 20px rgba(168,85,247,1)",
+              "0 0 12px rgba(168,85,247,0.7)",
+              "0 0 6px rgba(168,85,247,0.4)",
             ],
           }}
           transition={{
             duration: 3,
             repeat: Infinity,
-            repeatType: "reverse",
+            repeatType: "mirror",
           }}
           className="text-purple-500"
         >
@@ -55,7 +52,7 @@ export default function Hero() {
         </motion.span>
       </motion.h1>
 
-      {/* SUBTÍTULO COM TYPEWRITER */}
+      {/* SUBTÍTULO TYPEWRITER */}
       <motion.h2
         initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
@@ -63,7 +60,7 @@ export default function Hero() {
           text-xl md:text-2xl mt-4 
           font-medium tracking-wide
           text-gray-700 dark:text-gray-300
-          h-8 md:h-10 flex gap-1 flex-wrap items-center
+          h-8 md:h-10 flex gap-1 items-center whitespace-nowrap
         "
       >
         {subtitle.split("").map((char, i) => (
@@ -82,15 +79,10 @@ export default function Hero() {
         {/* CURSOR PISCANDO */}
         <motion.span
           initial={{ opacity: 0 }}
-          animate={{
-            opacity: [0, 1, 0],
-          }}
-          transition={{
-            duration: 1,
-            repeat: Infinity,
-          }}
-          className="ml-1 w-1 h-6 bg-purple-500"
-        ></motion.span>
+          animate={{ opacity: [0, 1, 0] }}
+          transition={{ duration: 1, repeat: Infinity }}
+          className="ml-1 w-[2px] h-[22px] md:h-[28px] bg-purple-500"
+        />
       </motion.h2>
 
       {/* TEXTO DESCRITIVO */}
@@ -119,7 +111,7 @@ export default function Hero() {
           hover:bg-purple-700
           dark:bg-purple-500 dark:hover:bg-purple-600
           shadow-[0_0_15px_rgba(168,85,247,0.6)]
-          hover:shadow-[0_0_20px_rgba(168,85,247,0.9)]
+          hover:shadow-[0_0_25px_rgba(168,85,247,1)]
           transition-all duration-300
         "
       >
